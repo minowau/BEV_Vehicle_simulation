@@ -1,7 +1,4 @@
-Battery Electric Vehicle (BEV) Trip Energy Simulation
-This project provides a simulation-based workflow for battery electric vehicles that utilizes real-time map data to construct realistic driving cycles and evaluate trip energy consumption.
 
-Overview
 The simulation workflow:
 
 Acquires route data using Google Maps API (origin, destination, elevation, road segments)
@@ -53,12 +50,6 @@ Saved data files for further analysis
 Advanced Extensions
 This project can be extended with:
 
-User-Informed Driving Modes: Implement different driving behavior modes (Eco, Normal, Performance)
-Charging and Route Optimization: Add charging station data and optimize routes for minimal energy usage or time
-Troubleshooting
-If you don't have Virtual Vehicle Composer, the code will still work using a simplified BEV model
-If the Google Maps API calls fail, check your API key and ensure you have the necessary permissions
-For visualization issues, ensure you have the latest version of MATLAB and required toolboxes
 References
 "Dynamic Route Optimization: How to Get Started"
 Wang, Z., & Wang, S. (2022). "Real-Time Dynamic Route Optimization Based on Predictive Control Principle." IEEE Access, 10, 55062-55072.
