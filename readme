@@ -1,0 +1,65 @@
+Battery Electric Vehicle (BEV) Trip Energy Simulation
+This project provides a simulation-based workflow for battery electric vehicles that utilizes real-time map data to construct realistic driving cycles and evaluate trip energy consumption.
+
+Overview
+The simulation workflow:
+
+Acquires route data using Google Maps API (origin, destination, elevation, road segments)
+Generates a realistic driving cycle based on the route data
+Creates a Battery Electric Vehicle (BEV) model using Virtual Vehicle Composer (or a simplified alternative)
+Simulates the trip to evaluate energy consumption and performance metrics
+Visualizes and analyzes the results
+Requirements
+MATLAB R2022a or newer
+Simulink
+Optional (but recommended):
+Virtual Vehicle Composer
+Powertrain Blockset
+Mapping Toolbox
+Setup Instructions
+Google Maps API Key:
+Obtain a Google Maps API key with access to:
+Directions API
+Elevation API
+Distance Matrix API
+Add your API key to the apiKey variable in the main script
+MATLAB Dependencies:
+If you have Virtual Vehicle Composer, ensure it's properly installed
+If not, the code will automatically use a simplified BEV model
+Running the Simulation
+Open MATLAB
+Navigate to the project directory
+Edit the main_script.m file:
+Replace 'YOUR_GOOGLE_MAPS_API_KEY' with your actual API key
+Modify the origin and destination as needed
+Adjust vehicle parameters to match your desired BEV configuration
+Run the main_script.m file
+Review the simulation results
+Files Description
+main_script.m: The main script that coordinates the entire simulation workflow
+generateDrivingCycle.m: Function to create a realistic driving cycle from route data
+createBEVModel.m: Function to create a Battery Electric Vehicle model using Virtual Vehicle Composer
+Example Output
+The simulation will generate:
+
+A visualization of the route, speed profile, elevation changes, and energy consumption
+Performance metrics including:
+Battery State of Charge (SOC)
+Energy consumption (kWh)
+Energy efficiency (Wh/km)
+Estimated range
+Trip cost
+Saved data files for further analysis
+Advanced Extensions
+This project can be extended with:
+
+User-Informed Driving Modes: Implement different driving behavior modes (Eco, Normal, Performance)
+Charging and Route Optimization: Add charging station data and optimize routes for minimal energy usage or time
+Troubleshooting
+If you don't have Virtual Vehicle Composer, the code will still work using a simplified BEV model
+If the Google Maps API calls fail, check your API key and ensure you have the necessary permissions
+For visualization issues, ensure you have the latest version of MATLAB and required toolboxes
+References
+"Dynamic Route Optimization: How to Get Started"
+Wang, Z., & Wang, S. (2022). "Real-Time Dynamic Route Optimization Based on Predictive Control Principle." IEEE Access, 10, 55062-55072.
+Xiang, Y., Yang, J., Li, X., Gu, C., & Zhang, S. (2022). "Routing Optimization of Electric Vehicles for Charging With Event-Driven Pricing Strategy." IEEE Transactions on Automation Science and Engineering, 19(1), 7-20.
