@@ -71,3 +71,7 @@ Conduct extensive validation across diverse routes and vehicles
 Conclusion
 Our Battery Electric Vehicle Route Energy Simulation project represents a significant advancement in addressing the practical challenges of electric vehicle adoption. By combining cutting-edge simulation techniques with real-world mapping data, we deliver a solution that transforms how drivers interact with and trust their electric vehicles.
 We respectfully request your consideration and support to bring this innovative solution to completion, ultimately accelerating the transition to sustainable transportation.
+
+License :
+Whole Project is MIT licensed
+
